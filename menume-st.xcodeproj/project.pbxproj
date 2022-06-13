@@ -14,6 +14,7 @@
 		137430A12854D6800019082C /* menume_st.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1374309F2854D6800019082C /* menume_st.xcdatamodeld */; };
 		137430A32854D6810019082C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137430A22854D6810019082C /* Assets.xcassets */; };
 		137430A62854D6810019082C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137430A42854D6810019082C /* LaunchScreen.storyboard */; };
+		137430AF2854D7320019082C /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 137430AE2854D7320019082C /* FSCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137430AF2854D7320019082C /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,9 @@
 			dependencies = (
 			);
 			name = "menume-st";
+			packageProductDependencies = (
+				137430AE2854D7320019082C /* FSCalendar */,
+			);
 			productName = "menume-st";
 			productReference = 137430932854D6800019082C /* menume-st.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 1374308A2854D6800019082C;
+			packageReferences = (
+				137430AD2854D7320019082C /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = 137430942854D6800019082C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -362,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		137430AD2854D7320019082C /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		137430AE2854D7320019082C /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 137430AD2854D7320019082C /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		1374309F2854D6800019082C /* menume_st.xcdatamodeld */ = {
